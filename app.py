@@ -42,9 +42,8 @@ def load_assets():
     return m, t
 
 # UI LAYOUT
-st.markdown('<div class="hero"><h1>🛡️ A Naïve Bayes Framework for Email Spam & Phishing Detection</h1><p>Final Year Project · Tagore Engineering College · 2026</p></div>', unsafe_allow_html=True)
+st.markdown('<div class="hero"><h1>🛡️ A Naïve Bayes Framework for Email Spam & Phishing Detection</h1><p></p></div>', unsafe_allow_html=True)
 l, r = st.columns([3, 2], gap="large")
-
 with l:
     st.markdown('<div class="card"><h4>🔍 Threat Scanner</h4>', unsafe_allow_html=True)
     user_input = st.text_area("Paste the email content or URL below:", height=200)
@@ -83,7 +82,7 @@ with r:
     st.markdown(f'''<div class="card"><h4>📊 System Intelligence</h4>
         <p><b>Model Accuracy:</b> 89.36%</p>
         <p><b>Entropy Detection:</b> ENABLED</p>
-        <p><b>Workstation:</b> Acer One Z14 (8GB RAM)</p>
+        <p><b>Execution Environment:</b> Local System (8GB RAM)</p>
         <hr style="border-top: 1px solid #334155">
-        <p style="font-size: 0.8rem; color: #94a3b8;">Hybrid Defense: Detecting DGA (Domain Generation Algorithms).</p>
+        <p style="font-size: 0.8rem; color: #94a3b8;">Hybrid Defense: Detecting phishing URLs using DGA patterns and heuristic analysis.</p>
     </div>''', unsafe_allow_html=True)
